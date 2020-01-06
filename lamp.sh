@@ -18,8 +18,8 @@ sed -i 's+/var/www/html+/var/www/html/wordpress+g' /etc/apache2/sites-available/
 a2ensite wordpress.conf
 systemctl restart apache2
 
-mysql -u root -p mysql
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
-GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';
-flush privileges;
+#mysql -u root -p mysql
+#CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
+#GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';
+#flush privileges;
 exit
